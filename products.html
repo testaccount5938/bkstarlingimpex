@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — BK Starling Impex</title>
+  <meta name="description" content="Browse our curated collection of luxury furniture — sofas, beds, dining sets, lighting, office furniture and more. Sourced globally, delivered to your door.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav scrolled" id="siteNav">
+    <a href="index.html" class="nav-logo">BK <span>Starling</span> Impex</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-contact">
+      <div class="nav-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        +91 98444 42202
+      </div>
+      <a href="contact.html" class="nav-cta">Get Quote</a>
+    </div>
+    <button class="hamburger" onclick="openNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mob-close" onclick="closeNav()">✕</button>
+    <nav class="mob-links">
+      <a href="index.html" onclick="closeNav()">Home</a>
+      <a href="products.html" onclick="closeNav()">Products</a>
+      <a href="about.html" onclick="closeNav()">About</a>
+      <a href="contact.html" onclick="closeNav()">Contact</a>
+    </nav>
+    <div class="mob-footer">
+      <p>Get in touch</p>
+      <a href="tel:+919844442202">+91 98444 42202</a>
+      <a href="mailto:sales@bkstarlingimpex.com" style="font-size:1rem">sales@bkstarlingimpex.com</a>
+    </div>
+  </div>
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-tag">Our Collection</span>
+      <h1>Furniture Collection</h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Products</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ── ALL CATEGORIES ── -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-hdr center fade-up">
+        <span class="section-tag">Browse by Category</span>
+        <h2>Explore Our Full Range</h2>
+        <div class="gold-line center"></div>
+        <p class="section-subtitle">From statement sofas to bespoke dining sets — every piece in our collection is sourced for quality, designed for lasting elegance.</p>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-bar" style="margin-top:2.5rem">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living Room</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="dining">Dining</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+        <button class="filter-btn" data-filter="outdoor">Outdoor & More</button>
+      </div>
+
+      <div class="cat-grid full-12">
+
+        <div class="cat-card fade-up filterable" data-cat="living">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Sofas & Armchairs" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Sofas & Armchairs</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="bedroom">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Beds & Mattresses" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Beds & Mattresses</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="dining">
+          <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Dining Sets" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Dining Sets</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="living">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Wardrobes & Storage" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Wardrobes & Storage</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="outdoor">
+          <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80" alt="Lighting" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Lighting</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="outdoor">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80" alt="Bathroom" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Bathroom</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="bedroom">
+          <img src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?auto=format&fit=crop&w=600&q=80" alt="Children's Room" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Children's Room</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="office">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Office & Business" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Office & Business</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="living">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=600&q=80" alt="Decor & Accessories" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Decor & Accessories</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="outdoor">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Outdoor Furniture" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Outdoor Furniture</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="dining">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80" alt="Kitchens" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Kitchen Furniture</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up filterable" data-cat="living">
+          <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=600&q=80" alt="Coffee & Side Tables" loading="lazy">
+          <div class="cat-overlay">
+            <span class="cat-name">Coffee & Side Tables</span>
+            <span class="cat-arrow">View Collection →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold">
+
+  <!-- ── FEATURED PRODUCTS ── -->
+  <section class="section section-alt" id="featured">
+    <div class="container">
+      <div class="section-hdr center fade-up">
+        <span class="section-tag">Handpicked</span>
+        <h2>Featured Pieces</h2>
+        <div class="gold-line center"></div>
+        <p class="section-subtitle">A selection of our most-loved furniture — crafted for those who refuse to settle for ordinary.</p>
+      </div>
+
+      <div class="prod-grid" style="margin-top:2.5rem">
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Milano Sofa Set" loading="lazy">
+            <span class="prod-badge">Bestseller</span>
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Sofas & Seating</span>
+            <h4 class="prod-name">Milano Luxury Sofa Set</h4>
+            <p class="prod-desc">Italian-inspired 3-seater in premium linen blend with solid walnut legs. Available in 8 upholstery options.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Venice King Bed" loading="lazy">
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Bedroom</span>
+            <h4 class="prod-name">Venice King Bed Frame</h4>
+            <p class="prod-desc">Upholstered king-size frame with tufted headboard. Solid hardwood construction, available in Queen and King.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Florence Dining" loading="lazy">
+            <span class="prod-badge">New Arrival</span>
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Dining</span>
+            <h4 class="prod-name">Florence Dining Collection</h4>
+            <p class="prod-desc">Extendable marble-top dining table with 6 upholstered chairs. Seats 6–8, available in 3 marble finishes.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Monaco Executive Desk" loading="lazy">
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Office & Business</span>
+            <h4 class="prod-name">Monaco Executive Desk</h4>
+            <p class="prod-desc">Premium executive workstation with integrated cable management, leather inlay, and solid oak structure.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Roma Accent Chair" loading="lazy">
+            <span class="prod-badge">Curated Pick</span>
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Sofas & Seating</span>
+            <h4 class="prod-name">Roma Accent Chair</h4>
+            <p class="prod-desc">Statement single-seater with sculptural silhouette, velvet upholstery, and brushed gold base. A room-defining piece.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=600&q=80" alt="Geneva Coffee Table" loading="lazy">
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Tables</span>
+            <h4 class="prod-name">Geneva Coffee Table</h4>
+            <p class="prod-desc">Minimalist tempered glass and brushed brass coffee table. Timeless proportions that anchor any living space with grace.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Paris Wardrobe" loading="lazy">
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Storage</span>
+            <h4 class="prod-name">Paris Wardrobe System</h4>
+            <p class="prod-desc">Floor-to-ceiling modular wardrobe with soft-close mechanisms, internal LED lighting, and mirror sliding doors.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+        <div class="prod-card fade-up">
+          <div class="prod-img">
+            <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=600&q=80" alt="Athens Pendant Light" loading="lazy">
+            <span class="prod-badge">New Arrival</span>
+          </div>
+          <div class="prod-info">
+            <span class="prod-cat">Lighting</span>
+            <h4 class="prod-name">Athens Pendant Collection</h4>
+            <p class="prod-desc">Handblown glass pendant lights in warm amber. Available in cluster or single configurations, dimmable LED compatible.</p>
+            <span class="prod-cta">Enquire Now →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CUSTOM ORDER BANNER ── -->
+  <div class="cta-banner" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80');">
+    <span class="section-tag" style="color:var(--gold-light)">Bespoke Service</span>
+    <h2>Don't See What You're Looking For?</h2>
+    <p>Our sourcing specialists can find and procure virtually any furniture piece to your exact specifications. Custom sizes, materials, finishes — nothing is out of reach.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn btn-primary">Request Custom Order</a>
+      <a href="contact.html" class="btn btn-outline">Talk to a Specialist</a>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">BK <span>Starling</span> Impex</span>
+        <p class="footer-about">Premium furniture sourcing and import specialists based in Bengaluru. Bringing global luxury to Indian homes and businesses since 2009. Quality, elegance, and trust — delivered.</p>
+        <div class="socials">
+          <a class="s-link" href="#" aria-label="Instagram">IG</a>
+          <a class="s-link" href="#" aria-label="Facebook">FB</a>
+          <a class="s-link" href="#" aria-label="WhatsApp">WA</a>
+          <a class="s-link" href="#" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="products.html">Sofas & Seating</a></li>
+          <li><a href="products.html">Bedroom</a></li>
+          <li><a href="products.html">Dining Sets</a></li>
+          <li><a href="products.html">Office Furniture</a></li>
+          <li><a href="products.html">Lighting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#values">Our Values</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Custom Orders</a></li>
+          <li><a href="#">Quality Assurance</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <div class="foot-c"><span class="foot-c-icon">📞</span><a href="tel:+919844442202">+91 98444 42202</a></div>
+        <div class="foot-c"><span class="foot-c-icon">✉</span><a href="mailto:sales@bkstarlingimpex.com">sales@bkstarlingimpex.com</a></div>
+        <div class="foot-c"><span class="foot-c-icon">📍</span><span>1st Floor, 58, 21st Cross Rd,<br>Sunkadakatte, Bengaluru — 560091</span></div>
+        <div class="foot-c"><span class="foot-c-icon">🕐</span><span>Mon–Sat: 10:00 AM – 7:00 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span class="footer-copy">© 2025 BK Starling Impex. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
